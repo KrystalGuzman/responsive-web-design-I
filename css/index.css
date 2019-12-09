@@ -192,22 +192,61 @@ body{
 /* Mobile version */
 @media (max-width: 500px){
     .logo{
-        display:block;
-        justify-content: center;
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        width: 25%;
     }
     nav{
         display:flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
+        justify-content: center;
         padding: 1%;
-}
+    }
+    nav a{
+        text-align: center;
+        border-bottom: solid 1px grey
+    }
     .links{
         display:flex;
         flex-direction: column;
-        width: 90%;
     }
     .titleimage {
         display:none;
     }
-}
+    .title{
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        width: 230%;
+    }
+    .top{
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .bottom{
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .features {
+        width: 100%;
+        padding: 2%
+    }
+    .about {
+        width: 100%;
+        padding 2%;
+    }
+    .services{
+        width: 100%;
+        padding 2%;
+    }
+    .product{
+        width: 100%;
+        padding 2%;
+    }
+    .vision{
+        width: 100%;
+        padding 2%;
 }
