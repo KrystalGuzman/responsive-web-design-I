@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    width: 90%;
 }
 ol, ul {
 	list-style: none;
@@ -72,19 +73,21 @@ h1, h2, h3, h4, h5 {
 /* Header */
 
 nav{
-	display:flex;
-	justify-content: space-around;
+    display:flex;
+    justify-content: space-around;
 	padding: 1%;
 	margin: 50px 0px 0px 0px;
 }
 nav a {
 	color: gray;
 	text-decoration: none;
-	padding: 1%;
+    padding: 1%;
 }
 .links{
     display:flex;
     justify-content: space-between;
+    overflow:auto;
+    width: 100%;
 }
 .title{
 	text-align: center;
@@ -94,7 +97,8 @@ nav a {
 	justify-content: space-around;
 }
 .titleimage {
-	width: 70%;
+    width: 70%;
+    align-content: center;
 }
 .title h1 {
 	line-height:50px;
@@ -165,6 +169,12 @@ body{
 	width: 90%;
 	margin: 0 auto;
 }
+.services-header-img{
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    
+}
 /* Tablet version */
 @media (max-width: 800px){
     .logo{
@@ -187,6 +197,11 @@ body{
         margin-left:auto;
         margin-right: auto;
         width: 230%;
+    }
+    .servicefact{
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
     }
 }
 /* Mobile version */
@@ -221,6 +236,11 @@ body{
         width: 230%;
     }
     .top{
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .middle{
         display:block;
         margin-left:auto;
         margin-right: auto;
