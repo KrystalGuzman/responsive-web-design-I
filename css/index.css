@@ -82,7 +82,9 @@ nav a {
 	text-decoration: none;
 	padding: 1%;
 }
-.logo{
+.links{
+    display:flex;
+    justify-content: space-between;
 }
 .title{
 	text-align: center;
@@ -111,11 +113,11 @@ nav a {
 }
 .features {
 	width: 50%;
-	padding: 1%
+	padding: 2%
 }
 .about {
 	width: 50%;
-	padding 1%;
+	padding 2%;
 }
 .middle{
 	display:flex;
@@ -162,4 +164,50 @@ li{
 body{
 	width: 90%;
 	margin: 0 auto;
+}
+/* Tablet version */
+@media (max-width: 800px){
+    .logo{
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        width: 25%;
+    }
+    nav{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 1%;
+    }
+    .titleimage {
+        display:none;
+    }
+    .title{
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        width: 230%;
+    }
+}
+/* Mobile version */
+@media (max-width: 500px){
+    .logo{
+        display:block;
+        justify-content: center;
+    }
+    nav{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 1%;
+}
+    .links{
+        display:flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .titleimage {
+        display:none;
+    }
+}
 }
